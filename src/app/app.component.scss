@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  .menu {
+    width: 40%;
+    ul {
+      text-align: left;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        cursor: pointer;
+        outline: 0;
+      }
+    }
+  }
+  .ra {
+    width: 60%;
+  }
+}
