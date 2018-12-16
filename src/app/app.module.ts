@@ -6,14 +6,31 @@ import { AppComponent } from './app.component';
 import { RangeComponent } from './operators/range/range.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MatDividerModule } from '@angular/material/divider';
+import { MatFormFieldModule } from '@angular/material';
+import { MatInputModule } from '@angular/material';
+import { MatListModule } from '@angular/material/list';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { OfComponent } from './operators/of/of.component';
+import { FromComponent } from './operators/from/from.component';
+import { IntervalComponent } from './operators/interval/interval.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    RangeComponent
+    RangeComponent,
+    OfComponent,
+    FromComponent,
+    IntervalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatDividerModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatListModule,
+    MatExpansionModule,
     BrowserAnimationsModule
   ],
   providers: [],

@@ -8,12 +8,18 @@ import { range } from 'rxjs';
 })
 export class RangeComponent implements OnInit {
 
+  values = [];
+
   constructor() { }
 
   ngOnInit() {
+    //sync operator
     //emit 1-10 in sequence
-    const source = range(1, 10);
-    //output: 1,2,3,4,5,6,7,8,9,10
-    const example = source.subscribe(val => console.log(val));
+
+    const source = range(2, 10);
+
+    source.pipe().subscribe(val => { 
+      console.log(val);
+      this.values.push(val)});
   }
 }

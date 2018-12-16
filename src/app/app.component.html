@@ -2,10 +2,21 @@
   Welcome to {{ title }}!
 </h1>
 <div class="wrapper">
-  <div class="menu" style="text-align:center">
-    <ul>
-      <li [routerLink]="['range']">Range</li>
-    </ul>
+ <div class="menu" style="text-align:center">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Simple Operators
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+  
+     <mat-list>
+      <mat-list-item routerLinkActive="active-link" [routerLink]="['range']">Range</mat-list-item>
+      <mat-list-item routerLinkActive="active-link" [routerLink]="['of']">Of</mat-list-item>
+      <mat-list-item routerLinkActive="active-link" [routerLink]="['from']">From</mat-list-item>
+      <mat-list-item routerLinkActive="active-link" [routerLink]="['interval']">Interval & Timer</mat-list-item>
+    </mat-list>  
+    </mat-expansion-panel>
   </div>
   <div class="ra">
     <router-outlet></router-outlet>
