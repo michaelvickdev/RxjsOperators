@@ -14,7 +14,7 @@ export class RangeComponent implements OnInit {
 
   ngOnInit() {
     //sync operator
-    //emit 1-10 in sequence
+    //emit 2-10 in sequence
 
     const source = range(2, 10);
 

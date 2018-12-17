@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { interval, timer } from 'rxjs';
+
 @Component({
   selector: 'app-interval',
   templateUrl: './interval.component.html',
@@ -13,17 +14,17 @@ export class IntervalComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    //Interval - Emit numbers in sequence based on provided 
-    const source = interval(1000);
-    const subscribe = source.subscribe(val => {
+    // Interval - Emit numbers(of events), with interval 4sec
+    const source = interval(4000);
+    const subscribe = source.pipe().subscribe(val => {
       console.log(val);
       this.intervalArray.push(val)
     });
 
-    //Timer - After given duration, emit numbers in sequence every specified duration.
-    const source2 = timer(1000);
+    // Timer -  1 argumet - delay, 2 argument - intervals for next emits after start with delay
+    const source2 = timer(2000, 1000);
 
-    const subscribe2 = source.subscribe(val => {
+    const subscribe2 = source2.pipe().subscribe(val => {
       console.log(val);
       this.timerArray.push(val)
     });
