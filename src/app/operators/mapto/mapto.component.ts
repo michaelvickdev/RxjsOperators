@@ -31,7 +31,7 @@ export class MaptoComponent implements OnInit {
     // MapTo - Map emissions to constant value.
 
     const source2 = interval(2000);
-    //map all emissions to one value
+    // map all emissions to one value
 
     const example2 = source2.pipe(mapTo('HELLO WORLD!'));
     example2.subscribe(val => this.output2.push(val));

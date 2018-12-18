@@ -21,6 +21,7 @@ import { DoComponent } from './operators/do/do.component';
 import { PluckComponent } from './operators/pluck/pluck.component';
 import { FirstComponent } from './operators/first/first.component';
 import { StartWithComponent } from './operators/start-with/start-with.component';
+import { CreateComponent } from './operators/create/create.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { StartWithComponent } from './operators/start-with/start-with.component'
     DoComponent,
     PluckComponent,
     FirstComponent,
-    StartWithComponent
+    StartWithComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,

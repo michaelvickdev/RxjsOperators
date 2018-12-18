@@ -11,6 +11,7 @@ import { DoComponent } from './operators/do/do.component';
 import { PluckComponent } from './operators/pluck/pluck.component';
 import { FirstComponent } from './operators/first/first.component';
 import { StartWithComponent } from './operators/start-with/start-with.component';
+import { CreateComponent } from './operators/create/create.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'pluck', component: PluckComponent},
   { path: 'first', component: FirstComponent},
   { path: 'start-with', component: StartWithComponent},
+  { path: 'create', component: CreateComponent},
 ];
 
 @NgModule({
