@@ -7,20 +7,17 @@ import { Observable } from 'rxjs';
   styleUrls: ['./create.component.scss']
 })
 export class CreateComponent implements OnInit {
-
   output = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-// Create an observable with given subscription function.
-const hello = Observable.create(function(observer) {
-  observer.next('Hello');
-  observer.next('World');
-});
+    // Create an observable with given subscription function.
+    const hello = Observable.create(function(observer) {
+      observer.next('Hello');
+      observer.next('World');
+    });
 
-const subscribe = hello.subscribe(val => this.output.push(val));
-
+    const subscribe = hello.subscribe(val => this.output.push(val));
   }
-
 }

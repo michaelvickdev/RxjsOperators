@@ -15,7 +15,7 @@ export class DoComponent implements OnInit {
 
   ngOnInit() {
     // Transparently perform actions or side-effects, such as logging.
-    //'do' does not transform values
+    // 'do' does not transform values
     const source = of(1, 2, 3, 4, 5);
     const example = source.pipe(
       tap(val => console.log(`BEFORE MAP: ${val}`)),
