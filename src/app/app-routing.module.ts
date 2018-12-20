@@ -12,24 +12,30 @@ import { PluckComponent } from './operators/pluck/pluck.component';
 import { FirstComponent } from './operators/first/first.component';
 import { StartWithComponent } from './operators/start-with/start-with.component';
 import { CreateComponent } from './operators/create/create.component';
+import { EveryComponent } from './operators/every/every.component';
+import { DistinctUntilChangedComponent } from './operators/distinct-until-changed/distinct-until-changed.component';
+import { DefaultIfEmptyComponent } from './operators/default-if-empty/default-if-empty.component';
 
 const routes: Routes = [
-  { path: 'range', component: RangeComponent},
-  { path: 'of', component: OfComponent},
-  { path: 'from', component: FromComponent},
-  { path: 'interval', component: IntervalComponent},
-  { path: 'empty', component: EmptyComponent},
-  { path: 'mapto', component: MaptoComponent},
-  { path: 'filter', component: FilterComponent},
-  { path: 'do', component: DoComponent},
-  { path: 'pluck', component: PluckComponent},
-  { path: 'first', component: FirstComponent},
-  { path: 'start-with', component: StartWithComponent},
-  { path: 'create', component: CreateComponent},
+  { path: 'range', component: RangeComponent },
+  { path: 'of', component: OfComponent },
+  { path: 'from', component: FromComponent },
+  { path: 'interval', component: IntervalComponent },
+  { path: 'empty', component: EmptyComponent },
+  { path: 'mapto', component: MaptoComponent },
+  { path: 'filter', component: FilterComponent },
+  { path: 'do', component: DoComponent },
+  { path: 'pluck', component: PluckComponent },
+  { path: 'first', component: FirstComponent },
+  { path: 'start-with', component: StartWithComponent },
+  { path: 'create', component: CreateComponent },
+  { path: 'every', component: EveryComponent },
+  { path: 'distinct', component: DistinctUntilChangedComponent },
+  { path: 'default-empty', component: DefaultIfEmptyComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -22,6 +22,9 @@ import { PluckComponent } from './operators/pluck/pluck.component';
 import { FirstComponent } from './operators/first/first.component';
 import { StartWithComponent } from './operators/start-with/start-with.component';
 import { CreateComponent } from './operators/create/create.component';
+import { EveryComponent } from './operators/every/every.component';
+import { DistinctUntilChangedComponent } from './operators/distinct-until-changed/distinct-until-changed.component';
+import { DefaultIfEmptyComponent } from './operators/default-if-empty/default-if-empty.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { CreateComponent } from './operators/create/create.component';
     PluckComponent,
     FirstComponent,
     StartWithComponent,
-    CreateComponent
+    CreateComponent,
+    EveryComponent,
+    DistinctUntilChangedComponent,
+    DefaultIfEmptyComponent
   ],
   imports: [
     BrowserModule,
