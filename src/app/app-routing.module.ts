@@ -16,6 +16,8 @@ import { EveryComponent } from './operators/every/every.component';
 import { DistinctUntilChangedComponent } from './operators/distinct-until-changed/distinct-until-changed.component';
 import { DefaultIfEmptyComponent } from './operators/default-if-empty/default-if-empty.component';
 import { DelayComponent } from './operators2/delay/delay.component';
+import { TakeComponent } from './operators2/take/take.component';
+import { ThrowComponent } from './operators2/throw/throw.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -34,6 +36,8 @@ const routes: Routes = [
   { path: 'distinct', component: DistinctUntilChangedComponent },
   { path: 'default-empty', component: DefaultIfEmptyComponent },
   { path: 'delay', component: DelayComponent },
+  { path: 'take', component: TakeComponent },
+  { path: 'throw', component: ThrowComponent },
 ];
 
 @NgModule({
