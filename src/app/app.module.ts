@@ -25,6 +25,7 @@ import { CreateComponent } from './operators/create/create.component';
 import { EveryComponent } from './operators/every/every.component';
 import { DistinctUntilChangedComponent } from './operators/distinct-until-changed/distinct-until-changed.component';
 import { DefaultIfEmptyComponent } from './operators/default-if-empty/default-if-empty.component';
+import { DelayComponent } from './operators2/delay/delay.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { DefaultIfEmptyComponent } from './operators/default-if-empty/default-if
     CreateComponent,
     EveryComponent,
     DistinctUntilChangedComponent,
-    DefaultIfEmptyComponent
+    DefaultIfEmptyComponent,
+    DelayComponent
   ],
   imports: [
     BrowserModule,
