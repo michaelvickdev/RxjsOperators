@@ -18,6 +18,11 @@ import { DefaultIfEmptyComponent } from './operators/default-if-empty/default-if
 import { DelayComponent } from './operators2/delay/delay.component';
 import { TakeComponent } from './operators2/take/take.component';
 import { ThrowComponent } from './operators2/throw/throw.component';
+import { UtilityComponent } from './operators2/utility/utility.component';
+import { SkipComponent } from './operators2/skip/skip.component';
+import { LastComponent } from './operators2/last/last.component';
+import { ConcatComponent } from './operators2/concat/concat.component';
+import { ConcatallComponent } from './operators2/concatall/concatall.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -38,6 +43,11 @@ const routes: Routes = [
   { path: 'delay', component: DelayComponent },
   { path: 'take', component: TakeComponent },
   { path: 'throw', component: ThrowComponent },
+  { path: 'utility', component: UtilityComponent },
+  { path: 'skip', component: SkipComponent },
+  { path: 'last', component: LastComponent },
+  { path: 'concat', component: ConcatComponent },
+  { path: 'concatall', component: ConcatallComponent },
 ];
 
 @NgModule({

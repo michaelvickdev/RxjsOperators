@@ -28,6 +28,11 @@ import { DefaultIfEmptyComponent } from './operators/default-if-empty/default-if
 import { DelayComponent } from './operators2/delay/delay.component';
 import { TakeComponent } from './operators2/take/take.component';
 import { ThrowComponent } from './operators2/throw/throw.component';
+import { UtilityComponent } from './operators2/utility/utility.component';
+import { SkipComponent } from './operators2/skip/skip.component';
+import { LastComponent } from './operators2/last/last.component';
+import { ConcatComponent } from './operators2/concat/concat.component';
+import { ConcatallComponent } from './operators2/concatall/concatall.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +54,12 @@ import { ThrowComponent } from './operators2/throw/throw.component';
     DefaultIfEmptyComponent,
     DelayComponent,
     TakeComponent,
-    ThrowComponent
+    ThrowComponent,
+    UtilityComponent,
+    SkipComponent,
+    LastComponent,
+    ConcatComponent,
+    ConcatallComponent
   ],
   imports: [
     BrowserModule,
