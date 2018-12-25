@@ -23,6 +23,11 @@ import { SkipComponent } from './operators2/skip/skip.component';
 import { LastComponent } from './operators2/last/last.component';
 import { ConcatComponent } from './operators2/concat/concat.component';
 import { ConcatallComponent } from './operators2/concatall/concatall.component';
+import { concatMap } from 'rxjs/operators';
+import { ConcatmapComponent } from './operators2/concatmap/concatmap.component';
+import { SingleComponent } from './operators2/single/single.component';
+import { IgnoreComponent } from './operators2/ignore/ignore.component';
+import { SampleComponent } from './operators2/sample/sample.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -48,6 +53,10 @@ const routes: Routes = [
   { path: 'last', component: LastComponent },
   { path: 'concat', component: ConcatComponent },
   { path: 'concatall', component: ConcatallComponent },
+  { path: 'concatmap', component: ConcatmapComponent },
+  { path: 'single', component: SingleComponent },
+  { path: 'ignore', component: IgnoreComponent },
+  { path: 'sample', component: SampleComponent },
 ];
 
 @NgModule({
