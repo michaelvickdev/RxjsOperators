@@ -28,6 +28,7 @@ import { ConcatmapComponent } from './operators2/concatmap/concatmap.component';
 import { SingleComponent } from './operators2/single/single.component';
 import { IgnoreComponent } from './operators2/ignore/ignore.component';
 import { SampleComponent } from './operators2/sample/sample.component';
+import { ScanComponent } from './operators2/scan/scan.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -57,6 +58,7 @@ const routes: Routes = [
   { path: 'single', component: SingleComponent },
   { path: 'ignore', component: IgnoreComponent },
   { path: 'sample', component: SampleComponent },
+  { path: 'scan', component: ScanComponent },
 ];
 
 @NgModule({

@@ -37,6 +37,7 @@ import { ConcatmapComponent } from './operators2/concatmap/concatmap.component';
 import { SingleComponent } from './operators2/single/single.component';
 import { IgnoreComponent } from './operators2/ignore/ignore.component';
 import { SampleComponent } from './operators2/sample/sample.component';
+import { ScanComponent } from './operators2/scan/scan.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { SampleComponent } from './operators2/sample/sample.component';
     ConcatmapComponent,
     SingleComponent,
     IgnoreComponent,
-    SampleComponent
+    SampleComponent,
+    ScanComponent
   ],
   imports: [
     BrowserModule,
