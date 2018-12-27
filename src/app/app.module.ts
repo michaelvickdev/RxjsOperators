@@ -38,6 +38,7 @@ import { SingleComponent } from './operators2/single/single.component';
 import { IgnoreComponent } from './operators2/ignore/ignore.component';
 import { SampleComponent } from './operators2/sample/sample.component';
 import { ScanComponent } from './operators2/scan/scan.component';
+import { GrupbyComponent } from './operators2/grupby/grupby.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { ScanComponent } from './operators2/scan/scan.component';
     SingleComponent,
     IgnoreComponent,
     SampleComponent,
-    ScanComponent
+    ScanComponent,
+    GrupbyComponent
   ],
   imports: [
     BrowserModule,
