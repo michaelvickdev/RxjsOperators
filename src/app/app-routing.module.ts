@@ -29,6 +29,7 @@ import { IgnoreComponent } from './operators2/ignore/ignore.component';
 import { SampleComponent } from './operators2/sample/sample.component';
 import { ScanComponent } from './operators2/scan/scan.component';
 import { GrupbyComponent } from './operators2/grupby/grupby.component';
+import { TimeoutComponent } from './operators2/timeout/timeout.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -60,6 +61,7 @@ const routes: Routes = [
   { path: 'sample', component: SampleComponent },
   { path: 'scan', component: ScanComponent },
   { path: 'group', component: GrupbyComponent },
+  { path: 'timeout', component: TimeoutComponent },
 ];
 
 @NgModule({

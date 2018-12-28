@@ -39,6 +39,7 @@ import { IgnoreComponent } from './operators2/ignore/ignore.component';
 import { SampleComponent } from './operators2/sample/sample.component';
 import { ScanComponent } from './operators2/scan/scan.component';
 import { GrupbyComponent } from './operators2/grupby/grupby.component';
+import { TimeoutComponent } from './operators2/timeout/timeout.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { GrupbyComponent } from './operators2/grupby/grupby.component';
     IgnoreComponent,
     SampleComponent,
     ScanComponent,
-    GrupbyComponent
+    GrupbyComponent,
+    TimeoutComponent
   ],
   imports: [
     BrowserModule,
