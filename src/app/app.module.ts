@@ -40,6 +40,10 @@ import { SampleComponent } from './operators2/sample/sample.component';
 import { ScanComponent } from './operators2/scan/scan.component';
 import { GrupbyComponent } from './operators2/grupby/grupby.component';
 import { TimeoutComponent } from './operators2/timeout/timeout.component';
+import { MergeComponent } from './operators2/merge/merge.component';
+import { BufferComponent } from './operators2/buffer/buffer.component';
+import { PartitionComponent } from './operators2/partition/partition.component';
+import { ThrottleComponent } from './operators2/throttle/throttle.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +77,11 @@ import { TimeoutComponent } from './operators2/timeout/timeout.component';
     SampleComponent,
     ScanComponent,
     GrupbyComponent,
-    TimeoutComponent
+    TimeoutComponent,
+    MergeComponent,
+    BufferComponent,
+    PartitionComponent,
+    ThrottleComponent
   ],
   imports: [
     BrowserModule,

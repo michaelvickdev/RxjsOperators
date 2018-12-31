@@ -30,6 +30,10 @@ import { SampleComponent } from './operators2/sample/sample.component';
 import { ScanComponent } from './operators2/scan/scan.component';
 import { GrupbyComponent } from './operators2/grupby/grupby.component';
 import { TimeoutComponent } from './operators2/timeout/timeout.component';
+import { MergeComponent } from './operators2/merge/merge.component';
+import { BufferComponent } from './operators2/buffer/buffer.component';
+import { PartitionComponent } from './operators2/partition/partition.component';
+import { ThrottleComponent } from './operators2/throttle/throttle.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -62,6 +66,10 @@ const routes: Routes = [
   { path: 'scan', component: ScanComponent },
   { path: 'group', component: GrupbyComponent },
   { path: 'timeout', component: TimeoutComponent },
+  { path: 'merge', component: MergeComponent },
+  { path: 'buffer', component: BufferComponent },
+  { path: 'partition', component: PartitionComponent },
+  { path: 'throttle', component: ThrottleComponent },
 ];
 
 @NgModule({
