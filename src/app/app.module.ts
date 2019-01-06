@@ -44,6 +44,7 @@ import { MergeComponent } from './operators2/merge/merge.component';
 import { BufferComponent } from './operators2/buffer/buffer.component';
 import { PartitionComponent } from './operators2/partition/partition.component';
 import { ThrottleComponent } from './operators2/throttle/throttle.component';
+import { ZipComponent } from './operators3/zip/zip.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import { ThrottleComponent } from './operators2/throttle/throttle.component';
     MergeComponent,
     BufferComponent,
     PartitionComponent,
-    ThrottleComponent
+    ThrottleComponent,
+    ZipComponent
   ],
   imports: [
     BrowserModule,
