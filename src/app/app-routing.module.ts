@@ -35,6 +35,7 @@ import { BufferComponent } from './operators2/buffer/buffer.component';
 import { PartitionComponent } from './operators2/partition/partition.component';
 import { ThrottleComponent } from './operators2/throttle/throttle.component';
 import { ZipComponent } from './operators3/zip/zip.component';
+import { CombineleastComponent } from './operators3/combineleast/combineleast.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -72,6 +73,7 @@ const routes: Routes = [
   { path: 'partition', component: PartitionComponent },
   { path: 'throttle', component: ThrottleComponent },
   { path: 'zip', component: ZipComponent },
+  { path: 'combinelatest', component: CombineleastComponent },
 ];
 
 @NgModule({

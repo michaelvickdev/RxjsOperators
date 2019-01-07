@@ -45,6 +45,7 @@ import { BufferComponent } from './operators2/buffer/buffer.component';
 import { PartitionComponent } from './operators2/partition/partition.component';
 import { ThrottleComponent } from './operators2/throttle/throttle.component';
 import { ZipComponent } from './operators3/zip/zip.component';
+import { CombineleastComponent } from './operators3/combineleast/combineleast.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { ZipComponent } from './operators3/zip/zip.component';
     BufferComponent,
     PartitionComponent,
     ThrottleComponent,
-    ZipComponent
+    ZipComponent,
+    CombineleastComponent
   ],
   imports: [
     BrowserModule,
