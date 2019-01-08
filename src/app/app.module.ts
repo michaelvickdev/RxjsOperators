@@ -46,6 +46,8 @@ import { PartitionComponent } from './operators2/partition/partition.component';
 import { ThrottleComponent } from './operators2/throttle/throttle.component';
 import { ZipComponent } from './operators3/zip/zip.component';
 import { CombineleastComponent } from './operators3/combineleast/combineleast.component';
+import { ForkjoinComponent } from './operators3/forkjoin/forkjoin.component';
+import { MulticastComponent } from './operators3/multicast/multicast.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +87,9 @@ import { CombineleastComponent } from './operators3/combineleast/combineleast.co
     PartitionComponent,
     ThrottleComponent,
     ZipComponent,
-    CombineleastComponent
+    CombineleastComponent,
+    ForkjoinComponent,
+    MulticastComponent
   ],
   imports: [
     BrowserModule,
