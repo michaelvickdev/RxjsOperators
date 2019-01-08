@@ -38,6 +38,7 @@ import { ZipComponent } from './operators3/zip/zip.component';
 import { CombineleastComponent } from './operators3/combineleast/combineleast.component';
 import { ForkjoinComponent } from './operators3/forkjoin/forkjoin.component';
 import { MulticastComponent } from './operators3/multicast/multicast.component';
+import { RaceComponent } from './operators3/race/race.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -78,6 +79,7 @@ const routes: Routes = [
   { path: 'combinelatest', component: CombineleastComponent },
   { path: 'forkjoin', component: ForkjoinComponent },
   { path: 'multicast', component: MulticastComponent },
+  { path: 'race', component: RaceComponent },
 ];
 
 @NgModule({
