@@ -39,6 +39,7 @@ import { CombineleastComponent } from './operators3/combineleast/combineleast.co
 import { ForkjoinComponent } from './operators3/forkjoin/forkjoin.component';
 import { MulticastComponent } from './operators3/multicast/multicast.component';
 import { RaceComponent } from './operators3/race/race.component';
+import { RetryComponent } from './operators3/retry/retry.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -80,6 +81,7 @@ const routes: Routes = [
   { path: 'forkjoin', component: ForkjoinComponent },
   { path: 'multicast', component: MulticastComponent },
   { path: 'race', component: RaceComponent },
+  { path: 'retry', component: RetryComponent },
 ];
 
 @NgModule({

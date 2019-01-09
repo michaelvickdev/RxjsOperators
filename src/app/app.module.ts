@@ -49,6 +49,7 @@ import { CombineleastComponent } from './operators3/combineleast/combineleast.co
 import { ForkjoinComponent } from './operators3/forkjoin/forkjoin.component';
 import { MulticastComponent } from './operators3/multicast/multicast.component';
 import { RaceComponent } from './operators3/race/race.component';
+import { RetryComponent } from './operators3/retry/retry.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +92,8 @@ import { RaceComponent } from './operators3/race/race.component';
     CombineleastComponent,
     ForkjoinComponent,
     MulticastComponent,
-    RaceComponent
+    RaceComponent,
+    RetryComponent
   ],
   imports: [
     BrowserModule,
