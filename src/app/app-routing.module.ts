@@ -40,6 +40,10 @@ import { ForkjoinComponent } from './operators3/forkjoin/forkjoin.component';
 import { MulticastComponent } from './operators3/multicast/multicast.component';
 import { RaceComponent } from './operators3/race/race.component';
 import { RetryComponent } from './operators3/retry/retry.component';
+import { LatestfromComponent } from './operators3/latestfrom/latestfrom.component';
+import { WindowComponent } from './operators3/window/window.component';
+import { LetComponent } from './operators3/let/let.component';
+import { DebounceComponent } from './operators3/debounce/debounce.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -82,6 +86,10 @@ const routes: Routes = [
   { path: 'multicast', component: MulticastComponent },
   { path: 'race', component: RaceComponent },
   { path: 'retry', component: RetryComponent },
+  { path: 'latestfrom', component: LatestfromComponent },
+  { path: 'window', component: WindowComponent },
+  { path: 'let', component: LetComponent },
+  { path: 'debounce', component: DebounceComponent },
 ];
 
 @NgModule({

@@ -18,7 +18,7 @@ export class FromComponent implements OnInit {
 
         source.pipe().subscribe(val => {
           console.log(val);
-          this.values.push(val)
+          this.values.push(val);
         });
   }
 

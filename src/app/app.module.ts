@@ -50,6 +50,10 @@ import { ForkjoinComponent } from './operators3/forkjoin/forkjoin.component';
 import { MulticastComponent } from './operators3/multicast/multicast.component';
 import { RaceComponent } from './operators3/race/race.component';
 import { RetryComponent } from './operators3/retry/retry.component';
+import { LatestfromComponent } from './operators3/latestfrom/latestfrom.component';
+import { WindowComponent } from './operators3/window/window.component';
+import { LetComponent } from './operators3/let/let.component';
+import { DebounceComponent } from './operators3/debounce/debounce.component';
 
 @NgModule({
   declarations: [
@@ -93,7 +97,11 @@ import { RetryComponent } from './operators3/retry/retry.component';
     ForkjoinComponent,
     MulticastComponent,
     RaceComponent,
-    RetryComponent
+    RetryComponent,
+    LatestfromComponent,
+    WindowComponent,
+    LetComponent,
+    DebounceComponent
   ],
   imports: [
     BrowserModule,
