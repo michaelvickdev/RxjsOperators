@@ -13,11 +13,10 @@ export class RangeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // emit 2-10 in sequence
+    // emit 2-10 in sequence, 10 numbers starts from 2
     const source = range(2, 10);
 
     source.pipe().subscribe(val => {
-      console.log(val);
       this.values.push(val);
     });
   }

@@ -18,9 +18,9 @@ export class DoComponent implements OnInit {
     // 'do' does not transform values
     const source = of(1, 2, 3, 4, 5);
     const example = source.pipe(
-      tap(val => console.log(`BEFORE MAP: ${val}`)),
+      tap(val => this.output.push(`BEFORE MAP: ${val}`)),
       map(val => val + 10),
-      tap(val => console.log(`AFTER MAP: ${val}`))
+      tap(val => this.output.push(`AFTER MAP: ${val}`))
     );
 
     const subscribe = example.subscribe(val => this.output.push(val));

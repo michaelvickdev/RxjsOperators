@@ -27,7 +27,7 @@ export class SkipComponent implements OnInit {
     const example2 = source2.pipe(skipUntil(timer(6000)));
     example2.subscribe(val => this.output2.push(val));
 
-    // Skip emitted values from source until provided expression is false.
+    // skipWhile - Skip emitted values from source until provided expression is false.
 
     const source3 = interval(1000);
     const example3 = source3.pipe(skipWhile(val => val < 2));

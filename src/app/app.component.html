@@ -78,6 +78,20 @@
       <mat-list-item routerLinkActive="active-link" [routerLink]="['debounce']">Debounce/DebounceTime</mat-list-item>
     </mat-list>  
     </mat-expansion-panel>
+    <br>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Subjects
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+     <mat-list>
+      <mat-list-item routerLinkActive="active-link" [routerLink]="['subject']">Subject</mat-list-item>
+      <mat-list-item routerLinkActive="active-link" [routerLink]="['behaviorsubject']">BehaviorSubject</mat-list-item>
+      <mat-list-item routerLinkActive="active-link" [routerLink]="['replysubject']">ReplySubject</mat-list-item>
+      <mat-list-item routerLinkActive="active-link" [routerLink]="['asyncsubject']">AsyncSubject</mat-list-item>
+    </mat-list>  
+    </mat-expansion-panel>
   </div>
   <div class="ra">
     <router-outlet></router-outlet>

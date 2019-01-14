@@ -13,7 +13,8 @@ export class ConcatComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    // Concat - Subscribe to observables in order as previous completes, emit values.
+    // Concat will combine two observables into a combined sequence,
+    // but the second observable will not start emitting until the first one has completed.
 
     const sourceOne = of(1, 2, 3);
     const sourceTwo = of(4, 5, 6);

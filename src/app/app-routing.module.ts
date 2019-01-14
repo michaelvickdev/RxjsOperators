@@ -44,6 +44,10 @@ import { LatestfromComponent } from './operators3/latestfrom/latestfrom.componen
 import { WindowComponent } from './operators3/window/window.component';
 import { LetComponent } from './operators3/let/let.component';
 import { DebounceComponent } from './operators3/debounce/debounce.component';
+import { SubjectComponent } from './subjects/subject/subject.component';
+import { BehaviorComponent } from './subjects/behavior/behavior.component';
+import { ReplaysubjectComponent } from './subjects/replaysubject/replaysubject.component';
+import { AsyncsubjectComponent } from './subjects/asyncsubject/asyncsubject.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -90,6 +94,10 @@ const routes: Routes = [
   { path: 'window', component: WindowComponent },
   { path: 'let', component: LetComponent },
   { path: 'debounce', component: DebounceComponent },
+  { path: 'subject', component: SubjectComponent },
+  { path: 'behaviorsubject', component: BehaviorComponent },
+  { path: 'replysubject', component: ReplaysubjectComponent },
+  { path: 'asyncsubject', component: AsyncsubjectComponent },
 ];
 
 @NgModule({

@@ -17,7 +17,7 @@ export class FilterComponent implements OnInit {
     // Emit values that pass the provided condition.
     const source = from([1, 2, 3, 4, 5]);
     const example = source.pipe(filter(num => num % 2 === 0));
-    const subscribe = example.subscribe(val => this.output.push(`Even number: ${val}`));
+    example.subscribe(val => this.output.push(`Even number: ${val}`));
   }
 
 }

@@ -14,7 +14,8 @@ export class ScanComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    // Reduce - Reduces the values from source observable to a single value that's emitted when the source completes.
+    // Reduce - Reduces the values from source observable to
+    // a single value that's emitted when the source completes.
 
     const source = of(1, 2, 3, 4);
     const example = source.pipe(reduce((acc, val) => acc + val));

@@ -14,7 +14,8 @@ export class ThrottleComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    // Throttle - Emit value on the leading edge of an interval, but suppress new values until durationSelector has completed.
+    // Throttle - Emit value on the leading edge of an interval,
+    // but suppress new values until durationSelector has completed.
 
     const source = interval(1000);
     const example = source.pipe(throttle(val => interval(2000)));
@@ -27,3 +28,7 @@ export class ThrottleComponent implements OnInit {
     example2.subscribe(val => this.output2.push(val));
   }
 }
+
+// Разница между Throttle и Debouncer:
+// Debouncing объединяет серию последовательных вызовов в один вызов,
+// Throttle задерживает выполнение вызова
