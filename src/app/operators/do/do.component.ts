@@ -8,10 +8,9 @@ import { tap, map } from 'rxjs/operators';
   styleUrls: ['./do.component.scss']
 })
 export class DoComponent implements OnInit {
-
   output = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     // Transparently perform actions or side-effects, such as logging.
@@ -23,7 +22,6 @@ export class DoComponent implements OnInit {
       tap(val => this.output.push(`AFTER MAP: ${val}`))
     );
 
-    const subscribe = example.subscribe(val => this.output.push(val));
+    example.subscribe(val => this.output.push(val));
   }
-
 }

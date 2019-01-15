@@ -8,14 +8,12 @@ import { map, mapTo } from 'rxjs/operators';
   styleUrls: ['./mapto.component.scss']
 })
 export class MaptoComponent implements OnInit {
-
   output = [];
   output2 = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-
     // Map - Apply projection with each value from source.
     const source = from([
       { name: 'Joe', age: 30 },
@@ -33,5 +31,4 @@ export class MaptoComponent implements OnInit {
     const example2 = source2.pipe(mapTo('HELLO WORLD!'));
     example2.subscribe(val => this.output2.push(val));
   }
-
 }

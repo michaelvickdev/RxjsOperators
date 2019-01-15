@@ -7,11 +7,10 @@ import { interval, timer } from 'rxjs';
   styleUrls: ['./interval.component.scss']
 })
 export class IntervalComponent implements OnInit {
-
   intervalArray = [];
   timerArray = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     // Interval - Emit numbers(of events), with interval 4sec
@@ -26,7 +25,5 @@ export class IntervalComponent implements OnInit {
     source2.pipe().subscribe(val => {
       this.timerArray.push(val);
     });
-
   }
-
 }

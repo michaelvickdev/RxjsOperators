@@ -18,6 +18,6 @@ export class CreateComponent implements OnInit {
       observer.next('World');
     });
 
-    const subscribe = hello.subscribe(val => this.output.push(val));
+    hello.subscribe(val => this.output.push(val));
   }
 }

@@ -7,10 +7,9 @@ import { of } from 'rxjs';
   styleUrls: ['./of.component.scss']
 })
 export class OfComponent implements OnInit {
-
   values = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     // Emit variable amount of values in a sequence and then emits a complete notification.
@@ -20,5 +19,4 @@ export class OfComponent implements OnInit {
       this.values.push(val);
     });
   }
-
 }
