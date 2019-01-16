@@ -21,5 +21,4 @@ export class StartWithComponent implements OnInit {
     const example = source.pipe(startWith('start!'));
     example.subscribe(val => this.output.push(val));
   }
-
 }

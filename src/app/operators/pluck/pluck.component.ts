@@ -19,5 +19,4 @@ export class PluckComponent implements OnInit {
     const example = source.pipe(pluck('name'));
     example.subscribe(val => this.output.push(val));
   }
-
 }
