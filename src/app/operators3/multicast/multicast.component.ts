@@ -15,25 +15,6 @@ export class MulticastComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    // Share source and make hot by calling connect.
-
-    const source = interval(1000);
-    const example = source.pipe(
-      tap(_ => console.log('Do Something!')),
-      publish()
-    );
-
-    const subscribe = example.subscribe(val =>
-      console.log(`Subscriber One: ${val}`)
-    );
-    const subscribeTwo = example.subscribe(val =>
-      console.log(`Subscriber Two: ${val}`)
-    );
-
-    setTimeout(() => {
-      // example.connect();
-    }, 5000);
-
     // Share - Share source among multiple subscribers.
 
     const source2 = timer(1000);
@@ -61,7 +42,7 @@ export class MulticastComponent implements OnInit {
       mapTo('Result!')
     );
 
-    const multi = example.pipe(multicast(() => new Subject()));
+    const multi = example3.pipe(multicast(() => new Subject()));
 
     const subscriberOne = multi.subscribe(val => this.output3.push(val));
     const subscriberTwo = multi.subscribe(val => this.output3.push(val));
