@@ -10,28 +10,20 @@ import { publish, tap } from 'rxjs/operators';
 export class PublishComponent implements OnInit {
   output = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-
     const source = interval(1000);
-const example = source.pipe(
-  tap(_ => this.output.push('Do Something!')),
-  publish()
-);
+    const example = source.pipe(
+      tap(_ => this.output.push('Do Something!')),
+      publish()
+    );
 
-const subscribe = example.subscribe(val =>
-  console.log(`Subscriber One: ${val}`)
-);
-const subscribeTwo = example.subscribe(val =>
-  console.log(`Subscriber Two: ${val}`)
-);
+    example.subscribe(val => console.log(`Subscriber One: ${val}`));
+    example.subscribe(val => console.log(`Subscriber Two: ${val}`));
 
-setTimeout(() => {
-  // example.connect();
-}, 5000);
-
-
+    setTimeout(() => {
+      // example.connect();
+    }, 5000);
   }
-
 }

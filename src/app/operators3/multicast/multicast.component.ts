@@ -44,8 +44,8 @@ export class MulticastComponent implements OnInit {
 
     const multi = example3.pipe(multicast(() => new Subject()));
 
-    const subscriberOne = multi.subscribe(val => this.output3.push(val));
-    const subscriberTwo = multi.subscribe(val => this.output3.push(val));
+     multi.subscribe(val => this.output3.push(val));
+     multi.subscribe(val => this.output3.push(val));
     // multi.connect();
   }
 }

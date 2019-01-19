@@ -60,6 +60,7 @@ import { ReplaysubjectComponent } from './subjects/replaysubject/replaysubject.c
 import { AsyncsubjectComponent } from './subjects/asyncsubject/asyncsubject.component';
 import { PublishComponent } from './operators2/publish/publish.component';
 import { SwitchmapComponent } from './operators2/switchmap/switchmap.component';
+import { AuditComponent } from './operators2/audit/audit.component';
 
 @NgModule({
   declarations: [
@@ -114,6 +115,7 @@ import { SwitchmapComponent } from './operators2/switchmap/switchmap.component';
     AsyncsubjectComponent,
     PublishComponent,
     SwitchmapComponent,
+    AuditComponent,
   ],
   imports: [
     BrowserModule,

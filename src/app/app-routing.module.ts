@@ -50,6 +50,7 @@ import { ReplaysubjectComponent } from './subjects/replaysubject/replaysubject.c
 import { AsyncsubjectComponent } from './subjects/asyncsubject/asyncsubject.component';
 import { PublishComponent } from './operators2/publish/publish.component';
 import { SwitchmapComponent } from './operators2/switchmap/switchmap.component';
+import { AuditComponent } from './operators2/audit/audit.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -102,6 +103,7 @@ const routes: Routes = [
   { path: 'asyncsubject', component: AsyncsubjectComponent },
   { path: 'publish', component: PublishComponent },
   { path: 'switchmap', component: SwitchmapComponent },
+  { path: 'audit', component: AuditComponent },
 ];
 
 @NgModule({

@@ -37,6 +37,6 @@ export class DelayComponent implements OnInit {
     const message2 = interval(1000);
     const delayForFiveSeconds = () => timer(5000);
     const delayWhenExample = message2.pipe(delayWhen(delayForFiveSeconds));
-    const subscribe = delayWhenExample.subscribe(val => this.output2.push(val));
+    delayWhenExample.subscribe(val => this.output2.push(val));
   }
 }
