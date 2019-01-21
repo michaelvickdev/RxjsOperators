@@ -47,7 +47,6 @@ import { ThrottleComponent } from './operators2/throttle/throttle.component';
 import { ZipComponent } from './operators3/zip/zip.component';
 import { CombineleastComponent } from './operators3/combineleast/combineleast.component';
 import { ForkjoinComponent } from './operators3/forkjoin/forkjoin.component';
-import { MulticastComponent } from './operators3/multicast/multicast.component';
 import { RaceComponent } from './operators3/race/race.component';
 import { RetryComponent } from './operators3/retry/retry.component';
 import { LatestfromComponent } from './operators3/latestfrom/latestfrom.component';
@@ -102,7 +101,6 @@ import { AuditComponent } from './operators2/audit/audit.component';
     ZipComponent,
     CombineleastComponent,
     ForkjoinComponent,
-    MulticastComponent,
     RaceComponent,
     RetryComponent,
     LatestfromComponent,
