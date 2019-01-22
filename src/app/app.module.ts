@@ -42,7 +42,6 @@ import { GrupbyComponent } from './operators2/grupby/grupby.component';
 import { TimeoutComponent } from './operators2/timeout/timeout.component';
 import { MergeComponent } from './operators2/merge/merge.component';
 import { BufferComponent } from './operators2/buffer/buffer.component';
-import { PartitionComponent } from './operators2/partition/partition.component';
 import { ThrottleComponent } from './operators2/throttle/throttle.component';
 import { ZipComponent } from './operators3/zip/zip.component';
 import { CombineleastComponent } from './operators3/combineleast/combineleast.component';
@@ -96,7 +95,6 @@ import { AuditComponent } from './operators2/audit/audit.component';
     TimeoutComponent,
     MergeComponent,
     BufferComponent,
-    PartitionComponent,
     ThrottleComponent,
     ZipComponent,
     CombineleastComponent,

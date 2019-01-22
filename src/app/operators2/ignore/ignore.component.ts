@@ -20,7 +20,7 @@ export class IgnoreComponent implements OnInit {
       take(5),
       ignoreElements()
     );
-    const subscribe = example.subscribe(
+    example.subscribe(
       val => this.output.push(`NEXT: ${val}`),
       val => this.output.push(`ERROR: ${val}`),
       () => this.output.push('COMPLETE!')
