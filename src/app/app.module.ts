@@ -56,7 +56,6 @@ import { SubjectComponent } from './subjects/subject/subject.component';
 import { BehaviorComponent } from './subjects/behavior/behavior.component';
 import { ReplaysubjectComponent } from './subjects/replaysubject/replaysubject.component';
 import { AsyncsubjectComponent } from './subjects/asyncsubject/asyncsubject.component';
-import { PublishComponent } from './operators2/publish/publish.component';
 import { SwitchmapComponent } from './operators2/switchmap/switchmap.component';
 import { AuditComponent } from './operators2/audit/audit.component';
 
@@ -109,7 +108,6 @@ import { AuditComponent } from './operators2/audit/audit.component';
     BehaviorComponent,
     ReplaysubjectComponent,
     AsyncsubjectComponent,
-    PublishComponent,
     SwitchmapComponent,
     AuditComponent
   ],
