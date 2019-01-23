@@ -25,6 +25,6 @@ export class ZipComponent implements OnInit {
       sourceThree.pipe(delay(2000)),
       sourceFour.pipe(delay(3000))
     );
-    const subscribe = example.subscribe(val => this.output.push(val));
+    example.subscribe(val => this.output.push(val));
   }
 }

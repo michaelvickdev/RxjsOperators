@@ -111,7 +111,7 @@ import { AuditComponent } from './operators2/audit/audit.component';
     AsyncsubjectComponent,
     PublishComponent,
     SwitchmapComponent,
-    AuditComponent,
+    AuditComponent
   ],
   imports: [
     BrowserModule,
@@ -126,4 +126,4 @@ import { AuditComponent } from './operators2/audit/audit.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

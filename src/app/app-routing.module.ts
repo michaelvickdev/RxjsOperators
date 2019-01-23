@@ -99,7 +99,7 @@ const routes: Routes = [
   { path: 'asyncsubject', component: AsyncsubjectComponent },
   { path: 'publish', component: PublishComponent },
   { path: 'switchmap', component: SwitchmapComponent },
-  { path: 'audit', component: AuditComponent },
+  { path: 'audit', component: AuditComponent }
 ];
 
 @NgModule({

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject, interval, Observable } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-subject',
