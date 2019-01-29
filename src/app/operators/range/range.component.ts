@@ -7,10 +7,9 @@ import { range } from 'rxjs';
   styleUrls: ['./range.component.scss']
 })
 export class RangeComponent implements OnInit {
-
   values = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     // emit 2-10 in sequence, 10 numbers starts from 2

@@ -2,17 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { startWith } from 'rxjs/operators';
 import { of } from 'rxjs';
 
-
 @Component({
   selector: 'app-start-with',
   templateUrl: './start-with.component.html',
   styleUrls: ['./start-with.component.scss']
 })
 export class StartWithComponent implements OnInit {
-
   output = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     // Emit given value first.

@@ -15,9 +15,7 @@ export class EveryComponent implements OnInit {
   ngOnInit() {
     // If all values pass predicate before completion emit true, else false.
     const source = of(1, 2, 3, 4, 5);
-    const example = source.pipe(
-      every(val => val % 2 === 0)
-    );
+    const example = source.pipe(every(val => val % 2 === 0));
 
     example.subscribe(val => this.output.push(val));
   }

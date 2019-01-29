@@ -8,10 +8,9 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent implements OnInit {
-
   output = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     // Emit values that pass the provided condition.
@@ -19,5 +18,4 @@ export class FilterComponent implements OnInit {
     const example = source.pipe(filter(num => num % 2 === 0));
     example.subscribe(val => this.output.push(`Even number: ${val}`));
   }
-
 }

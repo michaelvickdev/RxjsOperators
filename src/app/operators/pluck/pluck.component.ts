@@ -8,10 +8,9 @@ import { pluck } from 'rxjs/operators';
   styleUrls: ['./pluck.component.scss']
 })
 export class PluckComponent implements OnInit {
-
   output = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     // Select properties to emit.
