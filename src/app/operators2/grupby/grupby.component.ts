@@ -10,7 +10,7 @@ import { groupBy, mergeMap, toArray } from 'rxjs/operators';
 export class GrupbyComponent implements OnInit {
   output = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     // Group into observables based on provided value.
@@ -28,5 +28,4 @@ export class GrupbyComponent implements OnInit {
     );
     example.subscribe(val => this.output.push(val[0].name));
   }
-
 }

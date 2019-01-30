@@ -15,7 +15,6 @@ export class MergeComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-
     // Merge - Turn multiple observables into a single observable.
 
     const first = interval(2500);

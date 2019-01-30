@@ -19,8 +19,6 @@ export class ConcatComponent implements OnInit {
     const sourceOne = of(1, 2, 3);
     const sourceTwo = of(4, 5, 6);
     const example = sourceOne.pipe(concat(sourceTwo));
-    example.subscribe(val =>
-      this.output.push('Example: Basic concat:', val)
-    );
+    example.subscribe(val => this.output.push('Example: Basic concat:', val));
   }
 }

@@ -9,25 +9,24 @@ import { concatMap, timeout, catchError, delay } from 'rxjs/operators';
 })
 export class TimeoutComponent implements OnInit {
   output = [];
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     // Error if no value is emitted before specified duration
 
     of(4000, 3000, 2000)
-  .pipe(
-    concatMap(duration =>
-      this.makeRequest(duration).pipe(
-        timeout(2500),
-        catchError(error => of(`Request timed out after: ${duration}`))
+      .pipe(
+        concatMap(duration =>
+          this.makeRequest(duration).pipe(
+            timeout(2500),
+            catchError(error => of(`Request timed out after: ${duration}`))
+          )
+        )
       )
-    )
-  )
-  .subscribe(val => this.output.push(val));
+      .subscribe(val => this.output.push(val));
   }
 
-   makeRequest(timeToDelay) {
+  makeRequest(timeToDelay) {
     return of('Request Complete!').pipe(delay(timeToDelay));
   }
-
 }
