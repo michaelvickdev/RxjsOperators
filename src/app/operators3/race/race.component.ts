@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { mapTo } from 'rxjs/operators';
-import { interval, race} from 'rxjs';
+import { interval, race } from 'rxjs';
 
 @Component({
   selector: 'app-race',
@@ -21,6 +21,6 @@ export class RaceComponent implements OnInit {
       interval(2000),
       interval(2500)
     );
-     example.subscribe(val => this.output.push(val));
+    example.subscribe(val => this.output.push(val));
   }
 }
