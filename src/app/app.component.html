@@ -1,99 +1,213 @@
-<h1>
-  Welcome to {{ title }}!
-</h1>
+<h1>Welcome to {{ title }}!</h1>
 <div class="wrapper">
- <div class="menu" style="text-align:center">
+  <div class="menu" style="text-align:center">
     <mat-expansion-panel>
       <mat-expansion-panel-header>
-        <mat-panel-title>
-          Basic Operators
-        </mat-panel-title>
+        <mat-panel-title> Basic Operators </mat-panel-title>
       </mat-expansion-panel-header>
-  
-     <mat-list>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['range']">Range</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['of']">Of</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['from']">From</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['interval']">Interval & Timer</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['empty']">Empty</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['mapto']">Map & MapTo</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['filter']">Filter</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['do']">Do/Tap</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['pluck']">Pluck</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['first']">First</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['start-with']">StartWith</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['create']">Create</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['every']">Every</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['distinct']">DistinctUntilChanged</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['default-empty']">DefaultEmpty</mat-list-item>
-    </mat-list>  
+
+      <mat-list>
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['range']"
+          >Range</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['of']"
+          >Of</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['from']"
+          >From</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['interval']"
+          >Interval & Timer</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['empty']"
+          >Empty</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['mapto']"
+          >Map & MapTo</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['filter']"
+          >Filter</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['do']"
+          >Do/Tap</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['pluck']"
+          >Pluck</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['first']"
+          >First</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['start-with']"
+          >StartWith</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['create']"
+          >Create</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['every']"
+          >Every</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['distinct']"
+          >DistinctUntilChanged</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['default-empty']"
+          >DefaultEmpty</mat-list-item
+        >
+      </mat-list>
     </mat-expansion-panel>
-    <br>
+    <br />
     <mat-expansion-panel>
       <mat-expansion-panel-header>
-        <mat-panel-title>
-          Itermediate Operators
-        </mat-panel-title>
+        <mat-panel-title> Itermediate Operators </mat-panel-title>
       </mat-expansion-panel-header>
-  
-     <mat-list>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['delay']">Delay/DelayWhen</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['take']">Take/TakeWhile/TakeUntil</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['throw']">Throw</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['utility']">FromEvent</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['skip']">Skip/SkipUntil/SkipWhile</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['last']">Last</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['concat']">Concat</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['concatall']">ConcatAll</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['concatmap']">ConcatMap/ConcatMapTo</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['single']">Single</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['ignore']">IgnoreElements</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['sample']">Sample</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['scan']">Reduce/Scan</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['group']">GroupBy</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['timeout']">Timeout</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['merge']">Merge/MergeAll/MergeMap</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['switchmap']">SwitchMap</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['buffer']">Buffer</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['throttle']">Throttle/ThrottleTime</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['audit']">AuditTime</mat-list-item>
-    </mat-list>  
+
+      <mat-list>
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['delay']"
+          >Delay/DelayWhen</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['take']"
+          >Take/TakeWhile/TakeUntil</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['throw']"
+          >Throw</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['utility']"
+          >FromEvent</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['skip']"
+          >Skip/SkipUntil/SkipWhile</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['last']"
+          >Last</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['concat']"
+          >Concat</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['concatall']"
+          >ConcatAll</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['concatmap']"
+          >ConcatMap/ConcatMapTo</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['single']"
+          >Single</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['ignore']"
+          >IgnoreElements</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['sample']"
+          >Sample</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['scan']"
+          >Reduce/Scan</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['group']"
+          >GroupBy</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['timeout']"
+          >Timeout</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['merge']"
+          >Merge/MergeAll/MergeMap</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['switchmap']"
+          >SwitchMap</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['buffer']"
+          >Buffer</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['throttle']"
+          >Throttle/ThrottleTime</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['audit']"
+          >AuditTime</mat-list-item
+        >
+      </mat-list>
     </mat-expansion-panel>
-    <br>
+    <br />
     <mat-expansion-panel>
       <mat-expansion-panel-header>
-        <mat-panel-title>
-          Advanced Operators
-        </mat-panel-title>
+        <mat-panel-title> Advanced Operators </mat-panel-title>
       </mat-expansion-panel-header>
-     <mat-list>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['zip']">Zip</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['combinelatest']">CombineLatest</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['forkjoin']">ForkJoin</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['race']">Race</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['retry']">Retry/RetryWhen</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['latestfrom']">WithLatestFrom</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['window']">Window</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['let']">Let</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['debounce']">Debounce/DebounceTime</mat-list-item>
-    </mat-list>  
+      <mat-list>
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['zip']"
+          >Zip</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['combinelatest']"
+          >CombineLatest</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['forkjoin']"
+          >ForkJoin</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['race']"
+          >Race</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['retry']"
+          >Retry/RetryWhen</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['latestfrom']"
+          >WithLatestFrom</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['window']"
+          >Window</mat-list-item
+        >
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['let']"
+          >Let</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['debounce']"
+          >Debounce/DebounceTime</mat-list-item
+        >
+      </mat-list>
     </mat-expansion-panel>
-    <br>
+    <br />
     <mat-expansion-panel>
       <mat-expansion-panel-header>
-        <mat-panel-title>
-          Subjects
-        </mat-panel-title>
+        <mat-panel-title> Subjects </mat-panel-title>
       </mat-expansion-panel-header>
-     <mat-list>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['subject']">Subject</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['behaviorsubject']">BehaviorSubject</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['replysubject']">ReplySubject</mat-list-item>
-      <mat-list-item routerLinkActive="active-link" [routerLink]="['asyncsubject']">AsyncSubject</mat-list-item>
-    </mat-list>  
+      <mat-list>
+        <mat-list-item routerLinkActive="active-link" [routerLink]="['subject']"
+          >Subject</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['behaviorsubject']"
+          >BehaviorSubject</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['replysubject']"
+          >ReplySubject</mat-list-item
+        >
+        <mat-list-item
+          routerLinkActive="active-link"
+          [routerLink]="['asyncsubject']"
+          >AsyncSubject</mat-list-item
+        >
+      </mat-list>
     </mat-expansion-panel>
   </div>
-  <div class="ra">
-    <router-outlet></router-outlet>
-  </div>
+  <div class="ra"><router-outlet></router-outlet></div>
 </div>
