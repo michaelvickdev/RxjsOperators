@@ -48,6 +48,7 @@ import { ReplaysubjectComponent } from './subjects/replaysubject/replaysubject.c
 import { AsyncsubjectComponent } from './subjects/asyncsubject/asyncsubject.component';
 import { SwitchmapComponent } from './operators2/switchmap/switchmap.component';
 import { AuditComponent } from './operators2/audit/audit.component';
+import { SequenceEqualComponent } from './operators/sequence-equal/sequence-equal.component';
 
 const routes: Routes = [
   { path: 'range', component: RangeComponent },
@@ -97,7 +98,8 @@ const routes: Routes = [
   { path: 'replysubject', component: ReplaysubjectComponent },
   { path: 'asyncsubject', component: AsyncsubjectComponent },
   { path: 'switchmap', component: SwitchmapComponent },
-  { path: 'audit', component: AuditComponent }
+  { path: 'audit', component: AuditComponent },
+  { path: 'sequence', component: SequenceEqualComponent }
 ];
 
 @NgModule({

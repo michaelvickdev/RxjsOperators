@@ -7,16 +7,26 @@ import { of } from 'rxjs';
   styleUrls: ['./of.component.scss']
 })
 export class OfComponent implements OnInit {
-  values = [];
+  output = [];
 
   constructor() {}
 
   ngOnInit() {
     // Emit variable amount of values in a sequence and then emits a complete notification.
-    const source = of(1, 'TEST', 3, 4, 5);
+    // Example 1: Emitting a sequence of numbers
+
+    const source = of(1, 2, 3, 4, 5);
 
     source.pipe().subscribe(val => {
-      this.values.push(val);
+      this.output.push(val);
     });
+
+    // Example 2: Emitting an object, array, and function
+
+    const source2 = of({ name: 'Brian' }, [1, 2, 3], function hello() {
+      return 'Hello';
+    });
+
+    source2.subscribe(val => this.output.push(val));
   }
 }

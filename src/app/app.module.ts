@@ -58,6 +58,7 @@ import { ReplaysubjectComponent } from './subjects/replaysubject/replaysubject.c
 import { AsyncsubjectComponent } from './subjects/asyncsubject/asyncsubject.component';
 import { SwitchmapComponent } from './operators2/switchmap/switchmap.component';
 import { AuditComponent } from './operators2/audit/audit.component';
+import { SequenceEqualComponent } from './operators/sequence-equal/sequence-equal.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +110,8 @@ import { AuditComponent } from './operators2/audit/audit.component';
     ReplaysubjectComponent,
     AsyncsubjectComponent,
     SwitchmapComponent,
-    AuditComponent
+    AuditComponent,
+    SequenceEqualComponent
   ],
   imports: [
     BrowserModule,
