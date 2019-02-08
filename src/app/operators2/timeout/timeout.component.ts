@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { of } from 'rxjs';
 import { concatMap, timeout, catchError, delay } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-timeout',
@@ -9,10 +10,12 @@ import { concatMap, timeout, catchError, delay } from 'rxjs/operators';
 })
 export class TimeoutComponent implements OnInit {
   output = [];
+  output2 = [];
   constructor() {}
 
   ngOnInit() {
     // Error if no value is emitted before specified duration
+    // Example 1: Observable that emits multiple values
 
     of(4000, 3000, 2000)
       .pipe(
@@ -24,9 +27,27 @@ export class TimeoutComponent implements OnInit {
         )
       )
       .subscribe(val => this.output.push(val));
+
+  // Example 2: Observable that emits even numbers on timer
+
+  const evenNumbers = Observable.create(function(observer) {
+    let value = 0;
+    const interval = setInterval(() => {
+      if (value % 2 === 0) {
+        observer.next(value);
+      }
+      value++;
+    }, 1000);
+    return () => clearInterval(interval);
+  });
+  const subscribe = evenNumbers.subscribe(val => this.output2.push(val));
+  setTimeout(() => {
+    subscribe.unsubscribe();
+  }, 10000);
   }
 
   makeRequest(timeToDelay) {
     return of('Request Complete!').pipe(delay(timeToDelay));
   }
+
 }
