@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { of, timer, interval, fromEvent } from 'rxjs';
-import { debounce, debounceTime, delayWhen, map } from 'rxjs/operators';
+import { timer, fromEvent } from 'rxjs';
+import { debounce, debounceTime, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-debounce',
