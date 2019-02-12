@@ -1,12 +1,15 @@
 <h3>Interval & Timer operators</h3>
 <div class="wrapper">
-  <div>
+  <div class="col1">
     Interval:
-    <p *ngFor="let val of intervalArray">{{ val }}</p>
+    <p *ngFor="let val of output">{{ val }}</p>
   </div>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <div>
-    Timer:
-    <p *ngFor="let val of timerArray">{{ val }}</p>
+  <div class="col1">
+    Timer 1:
+    <p *ngFor="let val of output1">{{ val }}</p>
+  </div>
+  <div class="col1">
+    Timer 2:
+    <p *ngFor="let val of output2">{{ val }}</p>
   </div>
 </div>
