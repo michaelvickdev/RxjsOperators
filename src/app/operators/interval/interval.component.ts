@@ -24,7 +24,7 @@ export class IntervalComponent implements OnInit, OnDestroy {
 
     // Example 1: timer emits 1 value then completes
     // Timer -  1 argumet - delay, 2 argument - intervals for next emits after start with delay
-    const source2 = timer(2000, 1000);
+    const source2 = timer(1000);
 
     source2.pipe(takeUntil(this.unsubscribe$)).subscribe(val => {
       this.output1.push(val);
@@ -32,7 +32,7 @@ export class IntervalComponent implements OnInit, OnDestroy {
 
     // Example 2: timer emits after 1 second, then every 2 seconds
     const source3 = timer(1000, 2000);
-    source.subscribe(val => this.output2.push(val));
+    source3.subscribe(val => this.output2.push(val));
   }
 
   ngOnDestroy() {
