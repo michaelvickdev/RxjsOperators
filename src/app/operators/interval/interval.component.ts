@@ -9,6 +9,7 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class IntervalComponent implements OnInit, OnDestroy {
   private unsubscribe$ = new Subject<void>();
+  private subscription;
   output = [];
   output1 = [];
   output2 = [];
@@ -32,11 +33,14 @@ export class IntervalComponent implements OnInit, OnDestroy {
 
     // Example 2: timer emits after 1 second, then every 2 seconds
     const source3 = timer(1000, 2000);
-    source3.subscribe(val => this.output2.push(val));
+    this.subscription = source3.subscribe(val => this.output2.push(val));
   }
 
   ngOnDestroy() {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
+
+    // Ubsubscribe for api calls, to not block UI:
+    this.subscription.unsubscribe();
   }
 }
